@@ -4,7 +4,7 @@ DockerFile for setting up mysql in centos7:latest
 - PYTHON 3.4
 
 # DOCKER RUN Command
-docker run --name mysql -p 3306:3306 -it <image name> bash
+docker run --name mysql -p 3306:3306 -it [image name] bash
 
 # SQL ROOT Setup
 It has mysql 5.7 installed and briefly configured, Openjdk 8, and Python 3.4
