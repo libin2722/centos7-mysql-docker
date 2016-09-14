@@ -11,7 +11,11 @@ It has mysql 5.7 installed and briefly configured, Openjdk 8, and Python 3.4
 the temp mysql root password is 'password'
 and you will have to run the following command in mysql
 
-update user set password=PASSWORD("NEWPASSWORD") where User='root';
+mysql -u root -p
+# default passowrd: password
+
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY '123456';
+
 flush privileges;
 
 # run mysql
